@@ -1,0 +1,5 @@
+primes: primes.o
+	icc -std=c99 -pthread primes.o -o primes -g
+
+primeps.o: primes.c
+	  icc -c primes.c

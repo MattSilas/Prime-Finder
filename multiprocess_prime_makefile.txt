@@ -1,0 +1,5 @@
+primep: primep.o
+	icc -std=c99 -lrt primep.o -o primep
+
+primep.o: primep.c
+	  icc -c primep.c
